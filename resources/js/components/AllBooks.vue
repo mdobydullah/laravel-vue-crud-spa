@@ -52,10 +52,6 @@
                 this.axios
                     .delete(`https://laravel.dev/api/book/delete/${id}`)
                     .then(response => {
-                        // window.location.reload();
-                        // this.books.splice(this.books.indexOf(id), 1);
-                        // console.log(response.data)
-
                         let i = this.books.map(item => item.id).indexOf(id); // find index of your object
                         this.books.splice(i, 1)
                     });
