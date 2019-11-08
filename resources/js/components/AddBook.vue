@@ -30,7 +30,7 @@
             addBook() {
 
                 this.axios
-                    .post('https://laravel.dev/api/book/add', this.book)
+                    .post('http://localhost:8000/api/book/add', this.book)
                     .then(response => (
                         this.$router.push({name: 'home'})
                         // console.log(response.data)
